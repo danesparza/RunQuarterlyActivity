@@ -20,7 +20,7 @@ namespace RunQuarterlyActivity
             int currentMonth = DateTime.Now.Month;
 
             //  Determine what quarter it is:
-            int currentQuarter = MonthToQuarter[currentMonth];
+            int currentQuarter = MonthToQuarter[currentMonth - 1];
             Trace.TraceInformation("The current month is: {0}, the quarter is: {1}", currentMonth, currentQuarter);
 
             //  Find the configuration item for the current quarter:
